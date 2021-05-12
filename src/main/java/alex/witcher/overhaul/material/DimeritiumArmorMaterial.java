@@ -5,14 +5,11 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 
-public class SilverArmorMaterial implements ArmorMaterial {
+public class DimeritiumArmorMaterial implements ArmorMaterial {
 
-  // TODO: make amour material for witcher gear
-  // maybe not silver? => dimirite
+  public static final DimeritiumArmorMaterial INSTANCE = new DimeritiumArmorMaterial();
 
-  public static final SilverArmorMaterial INSTANCE = new SilverArmorMaterial();
-
-  private SilverArmorMaterial() {
+  private DimeritiumArmorMaterial() {
   }
 
   @Override
