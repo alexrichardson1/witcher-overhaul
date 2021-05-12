@@ -60,7 +60,7 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   @Override
   public String getName() {
-    return "Dimeritium";
+    return "dimeritium";
   }
 
   @Override
