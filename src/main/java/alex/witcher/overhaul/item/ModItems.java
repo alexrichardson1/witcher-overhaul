@@ -10,7 +10,7 @@ public class ModItems {
 
   public static final Item SILVER_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item SILVER_NUGGET = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
-  private static final Item DIMERITIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+  public static final Item DIMERITIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
 
   public static void register() {
