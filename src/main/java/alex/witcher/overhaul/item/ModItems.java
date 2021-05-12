@@ -1,7 +1,10 @@
 package alex.witcher.overhaul.item;
 
+import alex.witcher.overhaul.material.DimeritiumArmorMaterial;
 import alex.witcher.overhaul.material.SilverToolMaterial;
 import alex.witcher.overhaul.utils.ModLib;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.registry.Registry;
@@ -10,7 +13,10 @@ public class ModItems {
 
   public static final Item SILVER_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item SILVER_NUGGET = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
-  public static final Item DIMERITIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+  public static final Item DIMERITIUM_INGOT = new Item(
+      new Item.Settings().group(ItemGroup.MATERIALS));
+  public static final Item DIMERITIUM_HELMET = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
+      EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
 
 
   public static void register() {
@@ -29,5 +35,7 @@ public class ModItems {
     Registry.register(Registry.ITEM, ModLib.id("silver_sword"), new SilverSword());
     // dimeritium
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_ingot"), DIMERITIUM_INGOT);
+    // dimeritium armour
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_helmet"), DIMERITIUM_HELMET);
   }
 }
