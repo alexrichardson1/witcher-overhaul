@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "witcheroverhaul",
+  "version": "${version}",
+
+  "name": "Witcher Overhaul",
+  "description": "Adds various features inspired from the universe in Witcher.",
+  "authors": [
+    "Alex R"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/witcheroverhaul/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "alex.witcher.overhaul.WitcherOverhaul"
+    ]
+  },
+  "mixins": [
+    "witcheroverhaul.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

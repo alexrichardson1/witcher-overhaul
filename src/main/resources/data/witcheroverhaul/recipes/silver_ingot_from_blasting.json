@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "witcheroverhaul:silver_ore"
+  },
+  "result": "witcheroverhaul:silver_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}
