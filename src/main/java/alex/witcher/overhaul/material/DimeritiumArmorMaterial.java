@@ -1,24 +1,28 @@
 package alex.witcher.overhaul.material;
 
+import alex.witcher.overhaul.item.ModItems;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 
 public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   public static final DimeritiumArmorMaterial INSTANCE = new DimeritiumArmorMaterial();
+
+  private static final int NETHERITE_ENCHANTABILITY = 15;
   // durability
-  public static final int HELMET_DURABILITY = 13;
-  public static final int CHESTPLATE_DURABILITY = 15;
-  public static final int LEGGINGS_DURABILITY = 16;
-  public static final int BOOTS_DURABILITY = 11;
+  private static final int HELMET_DURABILITY = 13;
+  private static final int CHESTPLATE_DURABILITY = 15;
+  private static final int LEGGINGS_DURABILITY = 16;
+  private static final int BOOTS_DURABILITY = 11;
   // protections
-  private static final int KNOCKBACK_PROTECTION = 9;
-  public static final int HELMET_PROTECTION = 3;
-  public static final int CHESTPLATE_PROTECTION = 6;
-  public static final int LEGGINGS_PROTECTION = 8;
-  public static final int BOOTS_PROTECTION = 3;
+  private static final int HELMET_PROTECTION = 3;
+  private static final int CHESTPLATE_PROTECTION = 6;
+  private static final int LEGGINGS_PROTECTION = 8;
+  private static final int BOOTS_PROTECTION = 3;
 
   private static final int[] BASE_DURABILITY = new int[]{HELMET_DURABILITY, CHESTPLATE_DURABILITY,
       LEGGINGS_DURABILITY, BOOTS_DURABILITY};
@@ -31,41 +35,41 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   @Override
   public int getDurability(EquipmentSlot slot) {
-    return 0;
+    return BASE_DURABILITY[slot.getEntitySlotId()] * 10;
   }
 
   @Override
   public int getProtectionAmount(EquipmentSlot slot) {
-    return 0;
+    return PROTECTION_VALUES[slot.getEntitySlotId()];
   }
 
   @Override
   public int getEnchantability() {
-    return 0;
+    return NETHERITE_ENCHANTABILITY;
   }
 
   @Override
   public SoundEvent getEquipSound() {
-    return null;
+    return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
   }
 
   @Override
   public Ingredient getRepairIngredient() {
-    return null;
+    return Ingredient.ofItems(ModItems.DIMERITIUM_INGOT);
   }
 
   @Override
   public String getName() {
-    return null;
+    return "Dimeritium";
   }
 
   @Override
   public float getToughness() {
-    return 0;
+    return 3;
   }
 
   @Override
   public float getKnockbackResistance() {
-    return 0;
+    return 0.9F;
   }
 }
