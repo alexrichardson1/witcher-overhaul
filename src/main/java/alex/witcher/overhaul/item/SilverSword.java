@@ -8,6 +8,6 @@ import net.minecraft.item.SwordItem;
 public class SilverSword extends SwordItem {
 
   public SilverSword() {
-    super(SilverToolMaterial.INSTANCE, -1, -0.1F, new Item.Settings().group(ItemGroup.TOOLS));
+    super(SilverToolMaterial.INSTANCE, -1, -0.1F, new Item.Settings().group(ItemGroup.COMBAT));
   }
 }
