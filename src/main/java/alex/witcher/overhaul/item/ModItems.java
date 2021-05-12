@@ -10,13 +10,14 @@ public class ModItems {
 
   public static final Item SILVER_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item SILVER_NUGGET = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+  private static final Item DIMERITIUM_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
 
   public static void register() {
     // silver
     Registry.register(Registry.ITEM, ModLib.id("silver_ingot"), SILVER_INGOT);
     Registry.register(Registry.ITEM, ModLib.id("silver_nugget"), SILVER_NUGGET);
-    // witcher weapons
+    // silver tools
     Registry.register(Registry.ITEM, ModLib.id("silver_pickaxe"),
         new BasePickaxe(SilverToolMaterial.INSTANCE));
     Registry.register(Registry.ITEM, ModLib.id("silver_axe"),
@@ -26,5 +27,7 @@ public class ModItems {
     Registry.register(Registry.ITEM, ModLib.id("silver_shovel"),
         new BaseShovel(SilverToolMaterial.INSTANCE));
     Registry.register(Registry.ITEM, ModLib.id("silver_sword"), new SilverSword());
+    // dimeritium
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_ingot"), DIMERITIUM_INGOT);
   }
 }
