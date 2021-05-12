@@ -19,6 +19,12 @@ public class ModItems {
     // witcher weapons
     Registry.register(Registry.ITEM, ModLib.id("silver_pickaxe"),
         new BasePickaxe(SilverToolMaterial.INSTANCE));
+    Registry.register(Registry.ITEM, ModLib.id("silver_axe"),
+        new BaseAxe(SilverToolMaterial.INSTANCE));
+    Registry.register(Registry.ITEM, ModLib.id("silver_hoe"),
+        new BaseHoe(SilverToolMaterial.INSTANCE));
+    Registry.register(Registry.ITEM, ModLib.id("silver_shovel"),
+        new BaseShovel(SilverToolMaterial.INSTANCE));
     Registry.register(Registry.ITEM, ModLib.id("silver_sword"), new SilverSword());
   }
 }
