@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "witcheroverhaul:dimeritium_ingot"
+    }
+  },
+  "result": {
+    "item": "witcheroverhaul:dimeritium_leggings"
+  }
+}
