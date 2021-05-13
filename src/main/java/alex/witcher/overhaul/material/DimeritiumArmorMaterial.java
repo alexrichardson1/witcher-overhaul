@@ -3,7 +3,6 @@ package alex.witcher.overhaul.material;
 import alex.witcher.overhaul.item.ModItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ArmorMaterials;
