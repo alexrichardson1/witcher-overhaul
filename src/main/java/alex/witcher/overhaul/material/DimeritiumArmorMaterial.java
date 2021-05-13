@@ -1,9 +1,12 @@
 package alex.witcher.overhaul.material;
 
 import alex.witcher.overhaul.item.ModItems;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.ArmorMaterials;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -12,7 +15,7 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   public static final DimeritiumArmorMaterial INSTANCE = new DimeritiumArmorMaterial();
 
-  private static final int NETHERITE_ENCHANTABILITY = 15;
+  private static final int DURABILITY_MULTIPLIER = 50;
   // durability
   private static final int HELMET_DURABILITY = 13;
   private static final int CHESTPLATE_DURABILITY = 15;
@@ -35,7 +38,7 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   @Override
   public int getDurability(EquipmentSlot slot) {
-    return BASE_DURABILITY[slot.getEntitySlotId()] * 10;
+    return BASE_DURABILITY[slot.getEntitySlotId()] * DURABILITY_MULTIPLIER;
   }
 
   @Override
@@ -45,7 +48,7 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
 
   @Override
   public int getEnchantability() {
-    return NETHERITE_ENCHANTABILITY;
+    return ArmorMaterials.NETHERITE.getEnchantability();
   }
 
   @Override
@@ -59,17 +62,18 @@ public class DimeritiumArmorMaterial implements ArmorMaterial {
   }
 
   @Override
+  @Environment(EnvType.CLIENT)
   public String getName() {
     return "dimeritium";
   }
 
   @Override
   public float getToughness() {
-    return 3;
+    return ArmorMaterials.NETHERITE.getToughness();
   }
 
   @Override
   public float getKnockbackResistance() {
-    return 0.9F;
+    return ArmorMaterials.NETHERITE.getKnockbackResistance();
   }
 }
