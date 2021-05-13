@@ -1,13 +1,19 @@
 {
+    "block.witcheroverhaul.silver_ore": "Silver Ore",
     "item.witcheroverhaul.silver_ingot": "Silver Ingot",
     "item.witcheroverhaul.silver_nugget": "Silver Nugget",
     "block.witcheroverhaul.silver_block": "Block of Silver",
-    "block.witcheroverhaul.silver_ore": "Silver Ore",
     "item.witcheroverhaul.silver_axe": "Silver Axe",
     "item.witcheroverhaul.silver_hoe": "Silver Hoe",
     "item.witcheroverhaul.silver_pickaxe": "Silver Pickaxe",
     "item.witcheroverhaul.silver_shovel": "Silver Shovel",
     "item.witcheroverhaul.silver_sword": "Silver Sword",
+    "block.witcheroverhaul.dimeritium_ore": "Dimeritium Ore",
+    "item.witcheroverhaul.dimeritium_ingot": "Dimeritium Ingot",
+    "item.witcheroverhaul.dimeritium_helmet": "Dimeritium Helmet",
+    "item.witcheroverhaul.dimeritium_chestplate": "Dimeritium Chestplate",
+    "item.witcheroverhaul.dimeritium_leggings": "Dimeritium Leggings",
+    "item.witcheroverhaul.dimeritium_boots": "Dimeritium Boots",
     "item.witcheroverhaul.alcohol": "Alcohol",
     "effect.witcheroverhaul.drunk": "Drunk"
 }
