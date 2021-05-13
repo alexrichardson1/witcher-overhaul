@@ -17,7 +17,12 @@ public class ModItems {
       new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item DIMERITIUM_HELMET = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
       EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
-
+  public static final Item DIMERITIUM_CHESTPLATE = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
+      EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+  public static final Item DIMERITIUM_LEGGINGS = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
+      EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+  public static final Item DIMERITIUM_BOOTS = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
+      EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
   public static void register() {
     // silver
@@ -37,5 +42,8 @@ public class ModItems {
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_ingot"), DIMERITIUM_INGOT);
     // dimeritium armour
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_helmet"), DIMERITIUM_HELMET);
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_chestplate"), DIMERITIUM_CHESTPLATE);
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_leggings"), DIMERITIUM_LEGGINGS);
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_boots"), DIMERITIUM_BOOTS);
   }
 }
