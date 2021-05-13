@@ -13,6 +13,11 @@ public class ModItems {
 
   public static final Item SILVER_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item SILVER_NUGGET = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+  public static final Item SILVER_PICKAXE = new BasePickaxe(SilverToolMaterial.INSTANCE);
+  public static final Item SILVER_AXE = new BaseAxe(SilverToolMaterial.INSTANCE);
+  public static final Item SILVER_HOE = new BaseHoe(SilverToolMaterial.INSTANCE);
+  public static final Item SILVER_SHOVEL = new BaseShovel(SilverToolMaterial.INSTANCE);
+  public static final Item SILVER_SWORD = new SilverSword();
   public static final Item DIMERITIUM_INGOT = new Item(
       new Item.Settings().group(ItemGroup.MATERIALS));
   public static final Item DIMERITIUM_HELMET = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
@@ -29,15 +34,11 @@ public class ModItems {
     Registry.register(Registry.ITEM, ModLib.id("silver_ingot"), SILVER_INGOT);
     Registry.register(Registry.ITEM, ModLib.id("silver_nugget"), SILVER_NUGGET);
     // silver tools
-    Registry.register(Registry.ITEM, ModLib.id("silver_pickaxe"),
-        new BasePickaxe(SilverToolMaterial.INSTANCE));
-    Registry.register(Registry.ITEM, ModLib.id("silver_axe"),
-        new BaseAxe(SilverToolMaterial.INSTANCE));
-    Registry.register(Registry.ITEM, ModLib.id("silver_hoe"),
-        new BaseHoe(SilverToolMaterial.INSTANCE));
-    Registry.register(Registry.ITEM, ModLib.id("silver_shovel"),
-        new BaseShovel(SilverToolMaterial.INSTANCE));
-    Registry.register(Registry.ITEM, ModLib.id("silver_sword"), new SilverSword());
+    Registry.register(Registry.ITEM, ModLib.id("silver_pickaxe"), SILVER_PICKAXE);
+    Registry.register(Registry.ITEM, ModLib.id("silver_axe"), SILVER_AXE);
+    Registry.register(Registry.ITEM, ModLib.id("silver_hoe"), SILVER_HOE);
+    Registry.register(Registry.ITEM, ModLib.id("silver_shovel"), SILVER_SHOVEL);
+    Registry.register(Registry.ITEM, ModLib.id("silver_sword"), SILVER_SWORD);
     // dimeritium
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_ingot"), DIMERITIUM_INGOT);
     // dimeritium armour
