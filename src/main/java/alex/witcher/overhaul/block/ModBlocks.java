@@ -23,6 +23,9 @@ public class ModBlocks {
   public static final Block DIMERITIUM_BLOCK = new Block(
       FabricBlockSettings.of(Material.METAL).strength(5, 6).sounds(BlockSoundGroup.METAL)
           .breakByTool(FabricToolTags.PICKAXES, MiningLevel.IRON.level));
+  public static final Block DIMERITIUM_ORE = new Block(
+      FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE)
+          .breakByTool(FabricToolTags.PICKAXES, MiningLevel.IRON.level));
 
 
   public static void register() {
