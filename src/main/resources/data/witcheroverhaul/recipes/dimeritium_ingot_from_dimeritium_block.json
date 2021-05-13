@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dimeritium_ingot",
+  "ingredients": [
+    {
+      "item": "witcheroverhaul:dimeritium_block"
+    }
+  ],
+  "result": {
+    "item": "witcheroverhaul:dimeritium_ingot",
+    "count": 9
+  }
+}
