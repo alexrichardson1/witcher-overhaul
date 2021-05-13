@@ -31,10 +31,14 @@ public class ModBlocks {
     Registry.register(Registry.ITEM, ModLib.id("silver_block"),
         new BlockItem(SILVER_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
     // silver ore
+    // TODO: silver ore world generation
     Registry.register(Registry.BLOCK, ModLib.id("silver_ore"), SILVER_ORE);
     Registry.register(Registry.ITEM, ModLib.id("silver_ore"),
         new BlockItem(SILVER_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    // TODO: silver ore world generation
+    // dimeritium block
+    Registry.register(Registry.BLOCK, ModLib.id("dimeritium_block"), DIMERITIUM_BLOCK);
+    Registry.register(Registry.ITEM, ModLib.id("dimeritium_block"),
+        new BlockItem(DIMERITIUM_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
   }
 
 }
