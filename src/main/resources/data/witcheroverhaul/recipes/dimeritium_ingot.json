@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "witcheroverhaul:dimeritium_ore"
+  },
+  "result": "witcheroverhaul:dimeritium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}
