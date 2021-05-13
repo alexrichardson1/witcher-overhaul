@@ -46,7 +46,7 @@ public class ModBlocks {
     // TODO: dimeritium ore world generation
     Registry.register(Registry.BLOCK, ModLib.id("dimeritium_ore"), DIMERITIUM_ORE);
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_ore"),
-        new BlockItem(SILVER_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        new BlockItem(DIMERITIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
   }
 
 }
