@@ -1,8 +1,8 @@
 {
     "block.witcheroverhaul.silver_ore": "Silver Ore",
+    "block.witcheroverhaul.silver_block": "Block of Silver",
     "item.witcheroverhaul.silver_ingot": "Silver Ingot",
     "item.witcheroverhaul.silver_nugget": "Silver Nugget",
-    "block.witcheroverhaul.silver_block": "Block of Silver",
     "item.witcheroverhaul.silver_axe": "Silver Axe",
     "item.witcheroverhaul.silver_hoe": "Silver Hoe",
     "item.witcheroverhaul.silver_pickaxe": "Silver Pickaxe",
@@ -14,5 +14,6 @@
     "item.witcheroverhaul.dimeritium_helmet": "Dimeritium Helmet",
     "item.witcheroverhaul.dimeritium_chestplate": "Dimeritium Chestplate",
     "item.witcheroverhaul.dimeritium_leggings": "Dimeritium Leggings",
-    "item.witcheroverhaul.dimeritium_boots": "Dimeritium Boots"
+    "item.witcheroverhaul.dimeritium_boots": "Dimeritium Boots",
+    "enchantment.tutorial.wolven_chest": "Master Crafted Wolven Armor"
 }
