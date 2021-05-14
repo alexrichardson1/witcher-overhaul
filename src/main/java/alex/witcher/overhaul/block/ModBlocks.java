@@ -10,7 +10,13 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.decorator.Decorator;
+import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class ModBlocks {
 
@@ -26,6 +32,16 @@ public class ModBlocks {
   public static final Block DIMERITIUM_ORE = new Block(
       FabricBlockSettings.of(Material.STONE).strength(3, 3).sounds(BlockSoundGroup.STONE)
           .breakByTool(FabricToolTags.PICKAXES, MiningLevel.IRON.level));
+  public static ConfiguredFeature<?, ?> DIMERITIUM_ORE_OVERWORLD = Feature.ORE
+      .configure(new OreFeatureConfig(
+          OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, DIMERITIUM_ORE.getDefaultState(),
+          9)) // vein size
+      .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+          0, // bottom offset
+          0, // min y level
+          64))) // max y level
+      .spreadHorizontally()
+      .repeat(20); // number of veins per chunk
 
 
   public static void register() {
@@ -47,6 +63,8 @@ public class ModBlocks {
     Registry.register(Registry.BLOCK, ModLib.id("dimeritium_ore"), DIMERITIUM_ORE);
     Registry.register(Registry.ITEM, ModLib.id("dimeritium_ore"),
         new BlockItem(DIMERITIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, ModLib.id("dimeritium_ore_overworld"),
+        DIMERITIUM_ORE_OVERWORLD);
   }
 
 }
