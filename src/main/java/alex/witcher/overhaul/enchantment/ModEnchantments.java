@@ -6,7 +6,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEnchantments {
 
-  private static final Enchantment WOLVEN_CHEST_ENCHANTMENT = WolvenChestEnchantment.INSTANCE;
+  public static final Enchantment WOLVEN_CHEST_ENCHANTMENT = WolvenChestEnchantment.INSTANCE;
 
   public static void register() {
     Registry.register(Registry.ENCHANTMENT, ModLib.id("wolven_armour"), WOLVEN_CHEST_ENCHANTMENT);
