@@ -6,9 +6,9 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 
-public class WolvenChestEnchantment extends WolvenEnchantment {
+public class WolvenChestEnchantment extends WitcherArmourEnchantment {
 
-  public final static WolvenEnchantment INSTANCE = new WolvenChestEnchantment();
+  public final static WitcherArmourEnchantment INSTANCE = new WolvenChestEnchantment();
 
   private WolvenChestEnchantment() {
     super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_CHEST,

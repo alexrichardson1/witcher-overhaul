@@ -6,7 +6,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 
-public class WolvenHelmetEnchantment extends WolvenEnchantment {
+public class WolvenHelmetEnchantment extends WitcherArmourEnchantment {
 
   public final static WolvenHelmetEnchantment INSTANCE = new WolvenHelmetEnchantment();
 

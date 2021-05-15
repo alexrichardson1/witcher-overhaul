@@ -4,9 +4,9 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 
-public abstract class WolvenEnchantment extends Enchantment {
+public abstract class WitcherArmourEnchantment extends Enchantment {
 
-  protected WolvenEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+  protected WitcherArmourEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
     super(weight, type, slotTypes);
   }
 
