@@ -6,13 +6,14 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 
-public class WolvenChestEnchantment extends WitcherArmourEnchantment {
+public class WolvenArmourEnchantment extends WitcherArmourEnchantment {
 
-  public final static WitcherArmourEnchantment INSTANCE = new WolvenChestEnchantment();
+  public final static WitcherArmourEnchantment INSTANCE = new WolvenArmourEnchantment();
 
-  private WolvenChestEnchantment() {
-    super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_CHEST,
-        new EquipmentSlot[]{EquipmentSlot.CHEST});
+  private WolvenArmourEnchantment() {
+    super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR,
+        new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS,
+            EquipmentSlot.FEET});
   }
 
   @Override
@@ -27,6 +28,5 @@ public class WolvenChestEnchantment extends WitcherArmourEnchantment {
 
   @Override
   public void onUserDamaged(LivingEntity user, Entity attacker, int level) {
-    super.onUserDamaged(user, attacker, level);
   }
 }
