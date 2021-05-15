@@ -7,8 +7,10 @@ import net.minecraft.util.registry.Registry;
 public class ModEnchantments {
 
   public static final Enchantment WOLVEN_CHEST_ENCHANTMENT = WolvenChestEnchantment.INSTANCE;
+  public static final Enchantment WOLVEN_HELMET_ENCHANTMENT = WolvenChestEnchantment.INSTANCE;
 
   public static void register() {
     Registry.register(Registry.ENCHANTMENT, ModLib.id("wolven_armour"), WOLVEN_CHEST_ENCHANTMENT);
+    Registry.register(Registry.ENCHANTMENT, ModLib.id("wolven_helmet"), WOLVEN_HELMET_ENCHANTMENT);
   }
 }
