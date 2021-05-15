@@ -15,7 +15,7 @@ public abstract class WitcherArmourEnchantment extends Enchantment {
 
   @Override
   public final int getMaxLevel() {
-    return 3;
+    return 5;
   }
 
   @Override
