@@ -11,8 +11,8 @@ public class WolvenLeggingsEnchantment extends WolvenEnchantment {
   public final static WolvenLeggingsEnchantment INSTANCE = new WolvenLeggingsEnchantment();
 
   private WolvenLeggingsEnchantment() {
-    super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_CHEST,
-        new EquipmentSlot[]{EquipmentSlot.CHEST});
+    super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR_LEGS,
+        new EquipmentSlot[]{EquipmentSlot.LEGS});
   }
 
   @Override
