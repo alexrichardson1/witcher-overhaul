@@ -8,7 +8,7 @@ import net.minecraft.entity.damage.DamageSource;
 
 public class WolvenArmourEnchantment extends WitcherArmourEnchantment {
 
-  public final static WitcherArmourEnchantment INSTANCE = new WolvenArmourEnchantment();
+  public final static WolvenArmourEnchantment INSTANCE = new WolvenArmourEnchantment();
 
   private WolvenArmourEnchantment() {
     super(Rarity.VERY_RARE, EnchantmentTarget.ARMOR,
