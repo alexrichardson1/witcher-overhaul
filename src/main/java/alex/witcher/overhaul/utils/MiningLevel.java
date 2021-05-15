@@ -1,7 +1,8 @@
 package alex.witcher.overhaul.utils;
 
 public enum MiningLevel {
-  WOODENORGOLDEN(0),
+  WOODEN(0),
+  GOLDEN(0),
   STONE(1),
   IRON(2),
   DIAMOND(3),
