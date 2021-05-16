@@ -3,6 +3,7 @@ package alex.witcher.overhaul;
 import alex.witcher.overhaul.block.ModBlocks;
 import alex.witcher.overhaul.enchantment.ModEnchantments;
 import alex.witcher.overhaul.item.ModItems;
+import alex.witcher.overhaul.statuseffect.ModStatusEffects;
 import net.fabricmc.api.ModInitializer;
 
 public class WitcherOverhaul implements ModInitializer {
@@ -12,5 +13,6 @@ public class WitcherOverhaul implements ModInitializer {
     ModBlocks.register();
     ModEnchantments.register();
     ModItems.register();
+    ModStatusEffects.register();
   }
 }
