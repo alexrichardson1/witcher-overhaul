@@ -27,9 +27,9 @@ public class BleedStatusEffect extends StatusEffect {
   /*** This method is called when it applies the status effect. ***/
   @Override
   public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-    float DAMAGE_PER_TICK = 1.5F;
-    if (entity.getHealth() > DAMAGE_PER_TICK) {
-      entity.damage(DamageSource.MAGIC, DAMAGE_PER_TICK);
+    final float DAMAGE_PER_UPDATE = 1.5F;
+    if (entity.getHealth() > DAMAGE_PER_UPDATE) {
+      entity.damage(DamageSource.MAGIC, DAMAGE_PER_UPDATE);
     }
   }
 }
