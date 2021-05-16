@@ -8,6 +8,8 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class WolvenWeaponEnchantment extends WitcherWeaponEnchantment {
 
+  public static final WolvenWeaponEnchantment INSTANCE = new WolvenWeaponEnchantment();
+
   @Override
   public void onTargetDamaged(LivingEntity user, Entity target, int level) {
     if (target instanceof LivingEntity) {
