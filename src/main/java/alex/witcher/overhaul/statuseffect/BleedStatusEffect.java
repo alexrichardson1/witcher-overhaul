@@ -16,12 +16,7 @@ public class BleedStatusEffect extends StatusEffect {
   /*** This method is called every tick ***/
   @Override
   public boolean canApplyUpdateEffect(int duration, int amplifier) {
-    int k = 25 >> amplifier;
-    if (k > 0) {
-      return duration % k == 0;
-    } else {
-      return true;
-    }
+    return true;
   }
 
   /*** This method is called when it applies the status effect. ***/
