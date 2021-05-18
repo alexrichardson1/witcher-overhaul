@@ -6,8 +6,6 @@ import net.minecraft.entity.damage.DamageSource;
 
 public class WolvenArmourEnchantment extends WitcherArmourEnchantment {
 
-  public final static WolvenArmourEnchantment INSTANCE = new WolvenArmourEnchantment();
-
   @Override
   public int getProtectionAmount(int level, DamageSource source) {
     if (source.isOutOfWorld()) {
