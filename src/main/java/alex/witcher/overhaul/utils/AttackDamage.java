@@ -5,9 +5,9 @@ public enum AttackDamage {
   PLUSONE(0),
   PLUSTWO(1);
 
-  public final int attackDamageModifier;
+  public final int damage;
 
-  AttackDamage(int attackDamageModifier) {
-    this.attackDamageModifier = attackDamageModifier;
+  AttackDamage(int damage) {
+    this.damage = damage;
   }
 }
