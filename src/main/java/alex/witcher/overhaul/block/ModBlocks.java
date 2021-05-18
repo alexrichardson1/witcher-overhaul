@@ -50,13 +50,13 @@ public class ModBlocks {
   public static ConfiguredFeature<?, ?> DIMERITIUM_ORE_OVERWORLD = Feature.ORE
       .configure(new OreFeatureConfig(
           OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, DIMERITIUM_ORE.getDefaultState(),
-          9)) // vein size
+          5)) // vein size
       .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
           0,
           0, // min y level
-          64))) // max y level
+          25))) // max y level
       .spreadHorizontally()
-      .repeat(20); // number of veins per chunk
+      .repeat(4); // number of veins per chunk
 
 
   public static void register() {
