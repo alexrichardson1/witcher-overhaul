@@ -37,9 +37,9 @@ public class ModBlocks {
       .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
           0,
           0, // min y level
-          64))) // max y level
+          30))) // max y level
       .spreadHorizontally()
-      .repeat(20); // number of veins per chunk
+      .repeat(5); // number of veins per chunk
   public static final Block DIMERITIUM_BLOCK = new Block(
       FabricBlockSettings.of(Material.METAL).strength(5, 6).sounds(BlockSoundGroup.METAL)
           .breakByTool(FabricToolTags.PICKAXES, MiningLevel.IRON.level));
