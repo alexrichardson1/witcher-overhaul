@@ -1,10 +1,11 @@
 package alex.witcher.overhaul.enchantment;
 
+import alex.witcher.overhaul.statuseffect.ModStatusEffects;
+import alex.witcher.overhaul.utils.ModLib;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 
 public class WolvenWeaponEnchantment extends WitcherWeaponEnchantment {
 
@@ -14,12 +15,12 @@ public class WolvenWeaponEnchantment extends WitcherWeaponEnchantment {
   public void onTargetDamaged(LivingEntity user, Entity target, int level) {
     if (target instanceof LivingEntity) {
       ((LivingEntity) target).addStatusEffect(
-          new StatusEffectInstance(StatusEffects.POISON, 20 * 2 * level, level - 1));
+          new StatusEffectInstance(ModStatusEffects.BLEED, ModLib.TICKS_PER_SECOND * 2 * level,
+              level - 1));
     }
   }
 
   // +11% Critical Hit Chance
-  // +11% Bleeding
   // +20% Exp from Monsters
 
   @Override
