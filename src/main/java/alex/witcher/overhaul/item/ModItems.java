@@ -20,14 +20,19 @@ public class ModItems {
   public static final Item SILVER_SWORD = new SilverSword();
   public static final Item DIMERITIUM_INGOT = new Item(
       new Item.Settings().group(ItemGroup.MATERIALS));
-  public static final Item DIMERITIUM_HELMET = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
-      EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
-  public static final Item DIMERITIUM_CHESTPLATE = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
-      EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
-  public static final Item DIMERITIUM_LEGGINGS = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
-      EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
-  public static final Item DIMERITIUM_BOOTS = new ArmorItem(DimeritiumArmorMaterial.INSTANCE,
-      EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
+  public static final Item DIMERITIUM_HELMET = new ArmorItemBuilder()
+      .withMaterial(DimeritiumArmorMaterial.INSTANCE).withSlot(EquipmentSlot.HEAD)
+      .withSettings(new Item.Settings().group(ItemGroup.COMBAT)).build();
+  public static final Item DIMERITIUM_CHESTPLATE = new ArmorItemBuilder()
+      .withMaterial(DimeritiumArmorMaterial.INSTANCE).withSlot(EquipmentSlot.CHEST)
+      .withSettings(new Item.Settings().group(ItemGroup.COMBAT)).build();
+  public static final Item DIMERITIUM_LEGGINGS = new ArmorItemBuilder()
+      .withMaterial(DimeritiumArmorMaterial.INSTANCE).withSlot(EquipmentSlot.LEGS)
+      .withSettings(new Item.Settings().group(ItemGroup.COMBAT)).build();
+  public static final Item DIMERITIUM_BOOTS = new ArmorItemBuilder()
+      .withMaterial(DimeritiumArmorMaterial.INSTANCE).withSlot(EquipmentSlot.FEET)
+      .withSettings(new Item.Settings().group(ItemGroup.COMBAT)).build();
 
   public static void register() {
     // silver
