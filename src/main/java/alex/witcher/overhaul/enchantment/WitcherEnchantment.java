@@ -53,7 +53,8 @@ public abstract class WitcherEnchantment extends Enchantment {
       case 5:
         mutableText.append("Grandmaster");
         break;
-
+      default:
+        mutableText.append(new TranslatableText("enchantment.level." + level));
     }
     return mutableText;
   }
