@@ -1,11 +1,13 @@
 # WitcherOverhaul
 Minecraft mod that adds gameplay features related to The Witcher series.
 
-![Witcher Gear](images/witcher_gear.png)
-
+<p align="center">
+  <img align="centre" alt="Witcher Medallion" src="src/main/resources/assets/witcheroverhaul/icon.png" />
+</p>
+  
 ## Materials
 
-This mod introduces the materials **Silver** and **Dimeritium** that can be used to create witcher gear and tools.
+This mod introduces the materials **silver** and **dimeritium** that can be used to create witcher gear and tools.
 
 ### Silver
 **Silver Ore** is generated in the world and can be smelted in a furnace or blast furnace to obtain **silver ingots**.
